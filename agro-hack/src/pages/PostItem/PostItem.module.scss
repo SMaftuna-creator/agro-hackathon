@@ -1,0 +1,77 @@
+.post_item_wrap{
+    padding: 50px 20px;
+    .search_add{
+        display: flex;
+
+  .search_wrap{
+    position: relative;
+    .xbtn{
+        position: absolute;
+        left: 5%;
+        bottom: 35%;
+    }
+    input{
+        width: 100%;
+    background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 15px;
+        padding: 15px 20px;
+    }
+        .search {
+            position: absolute;
+        right: 5%;
+            bottom: 20%;
+        }
+
+  }  
+  button{
+    margin-left: 20px;
+    width: 20%;
+    border: 1px solid #E0E0E0;
+    border-radius: 15px;
+        padding: 15px 20px;
+            background: white;
+            cursor: pointer;
+    img{
+        outline: none;
+                transform: rotate(45deg);
+    }
+  }
+        }
+  .item_container{
+    .item{
+       .item_title{
+        font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.5px;
+       }
+       .rate{
+        img{
+            margin-right: 15px;
+        }
+        .account{
+        margin-bottom: 15px;
+           display: flex; 
+           align-items: center;
+        }
+        .comment{
+            display: flex;
+          .comment_item{
+           margin-right: 20px; 
+        }
+        .up_wrap{
+         display: flex;
+         align-items: center;
+         margin-right: 15px;
+        }
+                .down_wrap {
+                    display: flex;
+                    align-items: center;
+                }
+        }
+       }
+    }
+  }
+}

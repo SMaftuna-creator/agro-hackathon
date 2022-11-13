@@ -1,0 +1,80 @@
+.container {
+  background: #2b9957;
+  padding: 30px 10px;
+  font-family: Roboto;
+  .signUp_wrap {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+  }
+  form {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    .signUp_title {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 40px;
+        }
+    .input_wrap {
+      display: flex;
+      flex-direction: column;
+      input {
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        width: 89%;
+        height: 1.4375em;
+        padding: 10px 14px;
+        margin-bottom: 16px;
+        outline: none;
+      }
+      .check_wrap {
+        margin: 20px 0;
+        div {
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          .check {
+            color: green;
+            width: 20px;
+            margin: 0;
+          }
+          label {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .submit {
+        background: #2b9957;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        text-align: center;
+        padding: 20px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+      }
+      .account {
+        text-align: center;
+        font-size: 12px;
+        .signIn {
+          color: rgb(3, 66, 148);
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+

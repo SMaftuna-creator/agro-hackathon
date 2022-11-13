@@ -1,9 +1,10 @@
 import './App.css';
+import PostItem from './pages/PostItem/PostItem';
 
 function App() {
   return (
     <div className="App">
-     hello
+      <PostItem/>
     </div>
   );
 }
