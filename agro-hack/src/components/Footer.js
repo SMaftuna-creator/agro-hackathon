@@ -1,8 +1,14 @@
 import React from "react";
 import { FaAd, FaCalendar, FaCalendarAlt, FaCalendarDay, FaHome, FaList, FaNewspaper, FaPlus, FaPlusCircle, FaPlusSquare, FaUserCircle } from "react-icons/fa";
 import "../Styles/footer.css";
+import {useNavigate} from 'react-router-dom';
+
 
 function Footer() {
+    const navigate = useNavigate();
+    const navigatetoNewProduct = () => {
+    navigate('/newproduct');
+  };
 	return (
 		<div className="footer">
             <div>
@@ -17,7 +23,7 @@ function Footer() {
                 </button>
                 <p className="footer-text">Maqolalar</p>
             </div>
-            <div>
+            <div onClick={navigatetoNewProduct}>
                 <button className="footer-btn-green">
                     <FaPlusSquare />
                 </button>
