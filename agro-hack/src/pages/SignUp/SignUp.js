@@ -3,13 +3,13 @@ import classes from "./SignUp.module.scss"
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 
 const SignUp = () => {
   const [region, setRegion] = React.useState('');
 
-  const handleChange = (event: SelectChangeEvent) => {
-    setRegion(event.target.value);
+  const handleChange = (e) => {
+    setRegion(e.target.value);
   };
   return (
     <div className={classes.container}>
