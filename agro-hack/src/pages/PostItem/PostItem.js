@@ -6,9 +6,14 @@ import account from "../../assets/icons/account.png";
 import star from "../../assets/icons/star.png";
 import up from "../../assets/icons/up.png";
 import down from "../../assets/icons/down.png";
+import {useNavigate} from 'react-router-dom';
 
 
 const PostItem = () => {
+   const navigate = useNavigate();
+const navigatetoCreatePost = () => {
+    navigate('/newpost');
+  };
   return (
     <div className={classes.post_item_wrap}>
         <div className={classes.search_add}>
@@ -17,7 +22,7 @@ const PostItem = () => {
         <input type="search" />
         <img src={search} alt="" className={classes.search}/>
       </div>
-      <button><img src={xbtn} alt="" /></button>
+      <button onClick={navigatetoCreatePost}><img src={xbtn} alt="" /></button>
       </div>
       <div className={classes.item_container}>
         <div className={classes.item}>
@@ -50,7 +55,7 @@ const PostItem = () => {
       </div>
       <div className={classes.item_container}>
         <div className={classes.item}>
-          <p className={classes.item_title}>Donli mahsulotlar</p>
+          <p className={classes.item_title}>Poliz ekinlari</p>
           <p>
            Don, doncha (caryopsis) — gʻalla ekinlari mevasi yoki dukkakli don oʻsimliklar urugʻi; dehqonchilikda yetishtiriladigan asosiy mahsulotlarning biri.
           </p>

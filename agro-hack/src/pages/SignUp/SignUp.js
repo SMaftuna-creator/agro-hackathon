@@ -4,12 +4,16 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-
+import {useNavigate} from 'react-router-dom';
 const SignUp = () => {
   const [region, setRegion] = React.useState('');
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setRegion(e.target.value);
+  };
+  const navigatetoHome = () => {
+    navigate('/');
   };
   return (
     <div className={classes.container}>
@@ -59,7 +63,7 @@ const SignUp = () => {
             <label>Xaridor</label>
             </div>
           </div>
-          <button className={classes.submit}>Davom etish</button>
+          <button onClick={navigatetoHome} className={classes.submit}>Davom etish</button>
           <p className={classes.account}>Akkountingiz bormi? <span className={classes.signIn}> Akkountga o'tish</span></p>
         </div>
 
