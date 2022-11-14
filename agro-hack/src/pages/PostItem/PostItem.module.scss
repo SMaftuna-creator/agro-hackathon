@@ -5,6 +5,7 @@
 
   .search_wrap{
     position: relative;
+
     .xbtn{
         position: absolute;
         left: 5%;
@@ -39,6 +40,7 @@
   }
         }
   .item_container{
+    margin: 20px 0;
     .item{
        .item_title{
         font-style: normal;

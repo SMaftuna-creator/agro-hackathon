@@ -1,31 +1,33 @@
-import React from 'react'
-import classes from "./SignUp.module.scss"
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import {useNavigate} from 'react-router-dom';
+import React from "react";
+import classes from "./SignUp.module.scss";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import { useNavigate } from "react-router-dom";
+import Footer from "../../components/Footer";
+
 const SignUp = () => {
-  const [region, setRegion] = React.useState('');
+  const [region, setRegion] = React.useState("");
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setRegion(e.target.value);
   };
   const navigatetoHome = () => {
-    navigate('/');
+    navigate("/home");
   };
   return (
+    <div>
     <div className={classes.container}>
-      <div className={classes.signUp_wrap}>
-      </div>
-      <form >
-      <p className={classes.signUp_title}>Ro'yxatdan o'tish</p>
+      {/* <div className={classes.signUp_wrap}></div> */}
+      <form>
+        <p className={classes.signUp_title}>Ro'yxatdan o'tish</p>
         <div className={classes.input_wrap}>
-          <input type="text" placeholder='Ism' />
-          <input type="text" placeholder='Surname' />
+          <input type="text" placeholder="Ism" />
+          <input type="text" placeholder="Surname" />
 
-          <input type="text" placeholder='Parol' />
+          <input type="text" placeholder="Parol" />
 
           <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
             <InputLabel id="demo-select-small">Hudud</InputLabel>
@@ -55,21 +57,27 @@ const SignUp = () => {
           </FormControl>
           <div className={classes.check_wrap}>
             <div>
-            <input type="checkbox" className={classes.check}/>
-            <label>Sotuvchi</label>
+              <input type="checkbox" className={classes.check} />
+              <label>Sotuvchi</label>
             </div>
             <div>
-            <input type="checkbox" className={classes.check}/>
-            <label>Xaridor</label>
+              <input type="checkbox" className={classes.check} />
+              <label>Xaridor</label>
             </div>
           </div>
-          <button onClick={navigatetoHome} className={classes.submit}>Davom etish</button>
-          <p className={classes.account}>Akkountingiz bormi? <span className={classes.signIn}> Akkountga o'tish</span></p>
+          <button onClick={navigatetoHome} className={classes.submit}>
+            Davom etish
+          </button>
+          <p className={classes.account}>
+            Akkountingiz bormi?{" "}
+            <span className={classes.signIn}> Akkountga o'tish</span>
+          </p>
         </div>
-
       </form>
     </div>
-  )
-}
+      <Footer/>
+    </div>
+  );
+};
 
-export default SignUp
+export default SignUp;

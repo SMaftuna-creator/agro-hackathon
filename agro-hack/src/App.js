@@ -5,16 +5,20 @@ import Posts from './pages/Posts/Posts';
 import NewProduct from './pages/NewProduct/NewProduct';
 import PostItem from './pages/PostItem/PostItem';
 import NewPost from './pages/NewPost/NewPost';
+import Content from './pages/Content';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={ <Posts/>} />
-        <Route path="/signup" element={ <SignUp/> } />
+        <Route path="/home" element={<Content/> } />
+        <Route path="/" element={ <SignUp/> } />
         <Route path="newproduct" element={ <NewProduct/> } />
+        <Route path="posts" element={ <Posts/> } />
         <Route path="postitem" element={ <PostItem/> } />
         <Route path="newpost" element={ <NewPost/> } />
+        
+
       </Routes>
       
     </div>

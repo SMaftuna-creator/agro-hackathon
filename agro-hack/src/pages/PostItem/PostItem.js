@@ -7,7 +7,8 @@ import star from "../../assets/icons/star.png";
 import up from "../../assets/icons/up.png";
 import down from "../../assets/icons/down.png";
 import {useNavigate} from 'react-router-dom';
-
+import Navbar from "../../components/Navbar"
+import Footer from "../../components/Footer"
 
 const PostItem = () => {
    const navigate = useNavigate();
@@ -15,6 +16,8 @@ const navigatetoCreatePost = () => {
     navigate('/newpost');
   };
   return (
+    <div>
+      <Navbar/>
     <div className={classes.post_item_wrap}>
         <div className={classes.search_add}>
       <div className={classes.search_wrap}>
@@ -77,6 +80,8 @@ const navigatetoCreatePost = () => {
         </div>
         <div className={classes.item}></div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };
