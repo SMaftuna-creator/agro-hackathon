@@ -1,10 +1,10 @@
 import './App.css';
-import PostItem from './pages/PostItem/PostItem';
+import NewProduct from './pages/NewProduct/NewProduct';
 
 function App() {
   return (
     <div className="App">
-      <PostItem/>
+      <NewProduct/>
     </div>
   );
 }
